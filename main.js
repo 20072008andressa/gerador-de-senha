@@ -65,7 +65,7 @@ campoSenha.value = senha;
 classificaSenha(alfabeto.length);
 }
 
-function classificaSenha(){
+function classificaSenha(tamanhoAlfabeto){
 const numeroSenha = document.querySelector('.parametro-senha__texto');
 let tamanhoSenha = 12;
 numeroSenha.textContent = tamanhoSenha;
