@@ -62,7 +62,7 @@ numeroAleatorio = Math.floor(numeroAleatorio);
 senha = senha + alfabeto[numeroAleatorio];
 }
 campoSenha.value = senha;
-classificaSenha();
+classificaSenha(alfabeto.length);
 }
 
 function classificaSenha(){
