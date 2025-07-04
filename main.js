@@ -75,7 +75,8 @@ forcaSenha.classList.add('forte');
 }
 else if (entropia > 5 && entropia < 12 ){
 forcaSenha.classList.add('media');
-} else if (entropia >= 5){
+} else if (entropia,
+    , >= 5){
 
 
 forcaSenha.classList.add('fraca');
