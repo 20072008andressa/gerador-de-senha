@@ -1,5 +1,5 @@
 const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
+let tamanhoSenha = 5;
 numeroSenha.textContent = tamanhoSenha;
 
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
@@ -66,20 +66,18 @@ classificaSenha(alfabeto.length);
 }
 
 function classificaSenha(tamanhoAlfabeto){
-const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
-numeroSenha.textContent = tamanhoSenha;
-
-function classificaSenha(){
- let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
- console.log(entropia);
+let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
+console.log(entropia);
 forcaSenha.classList.remove('fraca','media','forte');
 
 if (tamanhoSenha > 11){
 forcaSenha.classList.add('forte');
-}if (tamanhoSenha > 5 && tamanhoSenha < 12 ){
+}
+else if (tamanhoSenha > 5 && tamanhoSenha < 12 ){
 forcaSenha.classList.add('media');
-}else if (tamanhoSenha <= 5){
+else if (tamanhoSenha >= 5){
+
+
 forcaSenha.classList.add('forte');
 }
 }
